@@ -1,13 +1,13 @@
 import setuptools
 
 with open("./README.md","r", encoding="utf-8") as f:
-    long_description = f.read()
+    long_description1 = f.read()
 
 __version__="0.0.0"
 
 REPO_NAME = "Kidney_Disease_End_to_End"
 AUTHOR_USER_NAME = "MrB7822"
-SRC_REPO = "CNNClassifier"
+SRC_REPO = "cnnClassifier"
 AUTHOR_EMAIL = "brotherbhai54@gmail.com"
 
 setuptools.setup(
@@ -16,11 +16,10 @@ setuptools.setup(
     author = AUTHOR_USER_NAME,
     author_email = AUTHOR_EMAIL,
     description = " A small python package forCNN app",
-    long_description = long_description,
+    long_description = long_description1 ,
     long_description_content = "text/markdown",
     url= f'https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}',
-    project_urls= {"Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
-                   },
+    project_urls= {"Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues"},
     package_dir={"","src"},
     packages=setuptools.find_packages(where="src")
     
